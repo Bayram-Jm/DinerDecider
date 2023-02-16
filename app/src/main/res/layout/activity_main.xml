@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMain"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/selectFoodTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="Näme isleýäňiz?"
+        android:textColor="@color/colorText"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMn" />
+
+    <Button
+        android:id="@+id/decideBtn"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorText"
+        android:fontFamily="@font/muli_bold"
+        android:text="Anykla!"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageMn"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dd_logo" />
+
+    <EditText
+        android:id="@+id/addTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:fontFamily="@font/muli_bold"
+        android:hint="Haýsy nahary goşaly?"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectFoodTxt" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="219dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/colorText"
+        android:text="Goş"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/decideBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addTxt"
+        app:layout_constraintVertical_bias="0.247" />
+
+</android.support.constraint.ConstraintLayout>
